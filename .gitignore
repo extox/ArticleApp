@@ -365,3 +365,5 @@ FodyWeavers.xsd
 .vscode/
 launch.json
 tasks.json
+obj/
+bin/
