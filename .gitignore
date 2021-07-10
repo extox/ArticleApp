@@ -367,3 +367,6 @@ launch.json
 tasks.json
 obj/
 bin/
+*.dll
+*.cache
+*.pdb
