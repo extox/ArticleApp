@@ -14,12 +14,12 @@ namespace ArticleApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Articles01Controller : ControllerBase
+    public class ArticleController : ControllerBase
     {
-        private readonly ILogger<Articles01Controller> _logger;
+        private readonly ILogger<ArticleController> _logger;
         private readonly BaseDbContext _context;
 
-        public Articles01Controller(ILogger<Articles01Controller> logger, BaseDbContext context)
+        public ArticleController(ILogger<ArticleController> logger, BaseDbContext context)
         {
             _logger = logger;
             _context = context;
