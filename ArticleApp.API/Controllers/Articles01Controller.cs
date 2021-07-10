@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ArticleApp.API.Data;
 using ArticleApp.API.Models;
+using Microsoft.Extensions.Logging;
+
 
 namespace ArticleApp.API.Controllers
 {
@@ -14,10 +16,12 @@ namespace ArticleApp.API.Controllers
     [ApiController]
     public class Articles01Controller : ControllerBase
     {
+        private readonly ILogger<Articles01Controller> _logger;
         private readonly BaseDbContext _context;
 
-        public Articles01Controller(BaseDbContext context)
+        public Articles01Controller(ILogger<Articles01Controller> logger, BaseDbContext context)
         {
+            _logger = logger;
             _context = context;
         }
 
