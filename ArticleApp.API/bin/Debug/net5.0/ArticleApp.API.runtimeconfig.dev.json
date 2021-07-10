@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "/Users/jincrom/.dotnet/store/|arch|/|tfm|",
-      "/Users/jincrom/.nuget/packages"
-    ]
-  }
-}
