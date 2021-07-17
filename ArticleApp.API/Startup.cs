@@ -31,6 +31,7 @@ namespace ArticleApp.API
             //postgresql Connection
             services.AddDbContext<BaseDbContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddMemoryCache();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

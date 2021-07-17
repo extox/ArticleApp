@@ -9,7 +9,6 @@ using ArticleApp.API.Data;
 using ArticleApp.API.Models;
 using Microsoft.Extensions.Logging;
 
-
 namespace ArticleApp.API.Controllers
 {
     [Route("api/[controller]")]
@@ -18,6 +17,7 @@ namespace ArticleApp.API.Controllers
     {
         private readonly ILogger<ArticleController> _logger;
         private readonly BaseDbContext _context;
+        
 
         public ArticleController(ILogger<ArticleController> logger, BaseDbContext context)
         {
