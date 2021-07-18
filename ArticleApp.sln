@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{16954808-DF7
 		SQL\Create_Dummy_Data_Articles.sql = SQL\Create_Dummy_Data_Articles.sql
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArticleApp.MVC", "ArticleApp.MVC\ArticleApp.MVC.csproj", "{D084202F-513D-4C4B-9463-14AFCD11FF05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{D4A0A665-BFF0-459A-B268-DA6F33A73C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4A0A665-BFF0-459A-B268-DA6F33A73C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4A0A665-BFF0-459A-B268-DA6F33A73C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D084202F-513D-4C4B-9463-14AFCD11FF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D084202F-513D-4C4B-9463-14AFCD11FF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D084202F-513D-4C4B-9463-14AFCD11FF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D084202F-513D-4C4B-9463-14AFCD11FF05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
