@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{16954808-DF7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArticleApp.MVC", "ArticleApp.MVC\ArticleApp.MVC.csproj", "{D084202F-513D-4C4B-9463-14AFCD11FF05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticleApp.Web", "ArticleApp.Web\ArticleApp.Web.csproj", "{21F75F1B-908A-47AE-9B31-E940A811EF7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{D084202F-513D-4C4B-9463-14AFCD11FF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D084202F-513D-4C4B-9463-14AFCD11FF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D084202F-513D-4C4B-9463-14AFCD11FF05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F75F1B-908A-47AE-9B31-E940A811EF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F75F1B-908A-47AE-9B31-E940A811EF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F75F1B-908A-47AE-9B31-E940A811EF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F75F1B-908A-47AE-9B31-E940A811EF7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
