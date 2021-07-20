@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,10 +12,12 @@ namespace ArticleApp.MVC.Controllers
 {
     public class UploadController : Controller
     {
+        private readonly ILogger<UploadController> _logger;
         private readonly IHostingEnvironment _environment;
 
-        public UploadController(IHostingEnvironment environment)
+        public UploadController(ILogger<UploadController> logger, IHostingEnvironment environment)
         {
+            _logger = logger;
             _environment = environment;
         }
 
@@ -39,7 +42,7 @@ namespace ArticleApp.MVC.Controllers
                 using (var fileStream = new FileStream(Path.Combine(path, fileSaveName), FileMode.Create))
                 {
                     //file.CopyTo(fileStream);
-                    file.CopyToAsync(fileStream);
+                    await file.CopyToAsync(fileStream);
                 }
             }
 
