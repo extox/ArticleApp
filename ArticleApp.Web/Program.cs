@@ -21,6 +21,8 @@ namespace ArticleApp.Web
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    // 구동 url, port 셋팅
+                    webBuilder.UseUrls("https://localhost:44360");
                 });
     }
 }
