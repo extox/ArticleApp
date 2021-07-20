@@ -27,7 +27,7 @@ namespace ArticleApp.API.Controllers
 
         // GET: api/Article
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Article>>> GetArticles()
+        public async Task<ActionResult<List<Article>>> GetArticles()
         {
             return await _context.Articles.ToListAsync();
         }
